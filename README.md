@@ -1,0 +1,1 @@
+# Rspack vscode extension template
