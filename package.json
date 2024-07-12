@@ -28,10 +28,11 @@
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
+    "lint": "biome lint ./src",
     "test": "vscode-test"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@rspack/cli": "^0.7.5",
     "@rspack/core": "^0.7.5",
     "@swc/core": "^1.6.13",
@@ -42,7 +43,6 @@
     "@typescript-eslint/parser": "^7.11.0",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0",
-    "eslint": "^8.57.0",
     "typescript": "^5.4.5"
   }
 }
