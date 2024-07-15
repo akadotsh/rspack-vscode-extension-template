@@ -26,6 +26,7 @@
 			},
 			"suspicious": { "noDoubleEquals": "warn" }
 		},
-		"ignore": ["**/out", "**/dist", "**/*.d.ts"]
+		"ignore": ["**/out", "**/dist", "**/*.d.ts", "**/*.json", "tsconfig.json"],
+		"include": ["src/**/*.{js,ts,jsx,tsx}"]
 	}
 }
